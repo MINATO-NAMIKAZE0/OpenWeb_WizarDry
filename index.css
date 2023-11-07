@@ -1,0 +1,187 @@
+body {
+    background-image: linear-gradient(90deg, white, grey 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        1px 0px 1px #373737, 0px 1px 1px #373737,
+        2px 1px 1px #373737, 1px 2px 1px #373737,
+        3px 2px 1px #373737, 2px 3px 1px #373737,
+        4px 3px 1px #373737, 3px 4px 1px #373737,
+        5px 4px 1px #373737, 4px 5px 1px #373737,
+        6px 5px 1px #373737, 5px 6px 1px #373737,
+        7px 6px 1px #373737;
+
+}
+
+/* Container for the search box */
+.search-container {
+    background-color: #cfd1d3;
+    color: #000000;
+    border: 2px  black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 8px;
+    width: 300px;
+    border-radius: 28px;
+    margin-bottom: 15px;
+    box-shadow: rgb(32, 43, 54) 15px 25px 30px -5px;
+}
+
+
+
+.search-input {
+    border: none;
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    border-radius: 20px;
+}
+
+.search-button {
+    background-color: #cfd1d3;
+    color: #000000;
+    border: 2px  black;
+    border-radius: 20px;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+.search-button:hover {
+    background-color: #010101;
+    color: white;
+    font-weight: bold;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ------------------------------------- */
+
+.box {
+    background-image: linear-gradient(90deg, rgb(200, 193, 193), grey);
+    display: inline-block;
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    box-shadow: rgb(32, 43, 54) 15px 25px 30px -5px;
+}
+
+.box:after {
+    filter: blur(20px);
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#image {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.highlighted {
+    background-image: linear-gradient(90deg, rgb(200, 193, 193), grey);
+}
+
+.box label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.box input {
+    width: 100%;
+    padding: 5px;
+}
+
+.night-mode {
+    background-image: linear-gradient(90deg, black 100%, white);
+    color: #fff;
+}
+
+#nightModeButton {
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 40px;
+    border-radius: 20px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#nightModeButton:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 768px) {
+
+    .body{
+        background-color: grey;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .search-container {
+        width: 80%;
+    }
+
+    .search-input {
+        width: 70%;
+    }
+
+    .search-button {
+        margin-left: 10px;
+    }
+
+    .box {
+        width: calc(100% - 20px);
+        background-color: white;
+        color: black;
+    }
+
+    #nightModeButton {
+        margin-top:15px;
+        right: 10px;
+        bottom: 10px;
+        position: relative;
+    }
+}
